@@ -5,13 +5,17 @@ const buttonBackground = document.querySelector('.button-background')
 const buttonRadius = document.querySelector('.button-radius')
 
 buttonRotation.addEventListener('click', () => {
-  box.classList.toggle('rotate')
+  changeClass('add', 'rotate')
 })
 
 buttonBackground.addEventListener('click', () => {
-  box.classList.toggle('blue')
+  changeClass('toggle', 'blue')
 })
 
 buttonRadius.addEventListener('click', () => {
-  box.classList.toggle('radius')
+  changeClass('remove', 'rotate')
 })
+
+function changeClass(action, className) {
+  box.classList[action](className)
+}
