@@ -1,10 +1,11 @@
 import getAllElements from './utils/getAllElements'
-const boxes = getAllElements('.box')
+import getElement from './utils/getElement'
 
-console.log(boxes)
+const terms = getAllElements('[data-js="term"]')
 
-boxes.forEach(box => {
-  box.addEventListener('click', () => {
-    box.classList.toggle('active')
+terms.forEach(term => {
+  term.addEventListener('click', () => {
+    const textElement = getElement('[data-js="text"]', term)
+    textElement.classList.toggle('.hidden')
   })
 })

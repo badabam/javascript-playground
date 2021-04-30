@@ -1,3 +1,3 @@
-export default function getAllElements(selector) {
-  return document.querySelectorAll(selector)
+export default function getAllElements(selector, element = document) {
+  return element.querySelectorAll(selector)
 }

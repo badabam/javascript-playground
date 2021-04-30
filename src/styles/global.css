@@ -2,18 +2,16 @@
 @import './_base.css';
 @import './_utility.css';
 
-body {
+dl {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, 100px);
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background: steelblue;
+.term {
+  padding: 20px;
+  background: papayawhip;
 }
 
-.active {
-  background: hotpink;
+.term__text {
+  margin: 0;
 }
