@@ -1,3 +1,5 @@
+import getElement from './utils/getElement'
+
 const buttonHome = getElement('.button-home')
 const buttonBookmarks = getElement('.button-bookmarks')
 const buttonCreate = getElement('.button-create')
@@ -55,8 +57,4 @@ function deactivateButtons() {
   buttonBookmarks.classList.remove('active')
   buttonCreate.classList.remove('active')
   buttonSettings.classList.remove('active')
-}
-
-function getElement(selector) {
-  return document.querySelector(selector)
 }
