@@ -6,6 +6,6 @@ const terms = getAllElements('[data-js="term"]')
 terms.forEach(term => {
   term.addEventListener('click', () => {
     const textElement = getElement('[data-js="text"]', term)
-    textElement.classList.toggle('.hidden')
+    textElement.classList.toggle('hidden')
   })
 })
